@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Student Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> THE ICFAI UNIVERSITY DEHRADUN</h1>
+    <!-- <h5> <img src="icfai.jpg"alt="icfai"></h5> -->
+    <h2> B.Tech(2022-2026)</h2>
+    <h3>Details Of Student</h3>
+
+    <input type="text" id="searchBar" placeholder="Search by Name or Roll Number..." onkeyup="searchStudent()">
+
+    <div class="student-grid" id="student-grid">
+
+        <div class="student-card" data-roll="22stucddd01001" data-name="Abhinav" onclick="showDetails('22STUCDDD01001', 'Abhinav Kaintura', 'Software Development Engineer', 'Computer Science', 'akaint001@gmail.com', '+91 85328 93073', 'Dehradun', 'abhinav.jpg')">
+            <img src="assets/abhinav.jpg" alt="Abhinav Kaintura">
+        </div>
+        <div class="student-card" data-roll="22stucddn01003" data-name="Kartikey singh" onclick="showDetails('22STUCDDN01003', 'Kartikey singh', 'IOT Engineer', 'Electrical Engineering', 'skartikey4444@gmail.com', '+91 86011 97051', 'Kanpur', 'kartikey.jpg')">
+            <img src="assets/kartikey.jpg" alt="Kartikey singh">
+        </div>
+        <div class="student-card" data-roll="22stucddn01004" data-name="Tanya" onclick="showDetails('22STUCDDN01004', 'Tanya Panwar', '', 'Software Engineer', 'panwartanya@gmail.com', '+91 76689 53004', 'Sahrnpur', 'tanya.jpg')">
+            <img src="assets/tanya.jpg" alt="Tanya Panwar">
+        </div>
+        <div class="student-card" data-roll="22stucddn01005" data-name="Ganishka" onclick="showDetails('22STUCDDN01005', 'Ganishka Adhana', 'UI/UX', 'Computer Science', 'ganishkaadhana@gmail.com', '+91 89794 09991', 'Dehradun', 'mahi.jpg')">
+            <img src="assets/mahi.jpg" alt="Ganishka Adhana">
+        </div>
+        <div class="student-card" data-roll="22stucddn01006" data-name="ashutosh" onclick="showDetails('22STUCDDN01006', 'Ashutosh Om', 'Software Engineer', 'Computer Science', 'ashutoshom2002@gmail.com', '+91 73688 02790', 'Bhaglpur', 'ashutosh.jpg')">
+            <img src="assets/ashutosh.jpg" alt="Ashutosh Om">
+        </div>
+        <div class="student-card" data-roll="22stucddn01007" data-name="Parthiv" onclick="showDetails('22STUCDDN01007', 'Parthiv Patari', 'Web Development', 'Computer Science', 'patarisuparna@gmail.com', '+91 93666 76945', 'South Tripura', 'parthiv.jpg')">
+            <img src="assets/parthiv.jpg" alt="Parthiv Patari">
+        </div>
+        <div class="student-card" data-roll="22stucddn01008" data-name="Shiv" onclick="showDetails('22STUCDDN01008', 'Shiv Thapa ', 'SDE| A.I/D.S', 'Computer Science', 'manbthapa197@gmail.com', '+91 79037 94595', 'Jamshedpur', 'shiv.jpg')">
+            <img src="assets/shiv.jpg" alt="Shiv Thapa ">
+        </div>
+        <div class="student-card" data-roll="22stucddn01009" data-name="ayush" onclick="showDetails('22STUCDDN01009', 'Ayush Saini', 'Web Development', 'Computer Science', 'ayushsaini7033@gmail.com', '+91 93366 52489', 'Kanpur', 'ayush.jpg')">
+            <img src="assets/ayush.jpg" alt="Ayush Saini">
+        </div>
+        <div class="student-card" data-roll="22stucddn01010" data-name="jatin" onclick="showDetails('22STUCDDN01010', 'jatin Saini', 'Web Development', 'Computer Science', 'jatinsaini9792@gmail.com', '+91 97929 45286', 'Bindki Fatehpur', 'jatin.jpg')">
+            <img src="assets/jatin.jpg" alt="jatin Saini">
+        </div>
+        <div class="student-card" data-roll="22stucddn01011" data-name="Samyak" onclick="showDetails('22STUCDDN01011', 'Samyak Shrestha', 'Arduino Developer', 'Computer Science', 'samyakshrestha908@gmail.com', '+977 974-2315442', 'Nepal', 'samayk.jpg')">
+            <img src="assets/samayk.jpg" alt="Samyak Shrestha">
+        </div>
+        <div class="student-card" data-roll="22stucddn01012" data-name="Aryaveer" onclick="showDetails('22STUCDDN01012', 'Aryaveer Singh', 'Non Technical', 'Computer Science', 'aryaveersingh997@gmail.com', '+91 98174 04962', 'Ambala', 'aryaveer.jpg')">
+            <img src="assets/aryaveer.jpg" alt="Aryaveer Singh">
+        </div>
+        <div class="student-card" data-roll="22stucddn01013" data-name="deepika" onclick="showDetails('22STUCDDN01013', 'Rajtkla Deepikaraj ', 'Software Engineer', 'Computer Science', 'rachakatladeepikaraj@gmail.com','+91 88472 51386', 'Hyderabad', 'deepika.jpg')">
+            <img src="assets/deepika.jpg" alt="Rajtkla Deepikaraj">
+        </div>
+        <div class="student-card" data-roll="22stucddn01014" data-name="dev" onclick="showDetails('22STUCDDN01014', 'Dev Malik', 'Cyber Security', 'Computer Science', 'devmalik3414@gmail.com', '+91 70789 22040', 'Dehradun', 'dev.jpg')">
+            <img src="assets/dev.jpg" alt="Dev Malik">
+        </div>
+        <div class="student-card" data-roll="22stucddn01015" data-name="Aryamaan" onclick="showDetails('22STUCDDN01015', 'Aryamaan Singh', 'Non Technical', 'Computer Science', 'aryaveersingh997@gmail.com', '+91 70155 26293', 'Ambala', 'aryamaan.jpg')">
+            <img src="assets/aryamaan.jpg" alt="Aryamaan Singh">
+        </div>
+        <div class="student-card" data-roll="22stucddn01016" data-name="mayank" onclick="showDetails('22STUCDDN01016', 'Mayank Singh Yadav', 'Software Engineer', 'Computer Science', 'my335588@gmail.com', '+91 70155 26293', 'Kanpur', 'mayank.jpg')">
+            <img src="assets/mayank.jpg" alt="Mayank Singh yadav">
+        </div>
+        <div class="student-card" data-roll="22stucddn01017" data-name="ritika" onclick="showDetails('22STUCDDN01017', 'Singh Prasant Ritika', 'UI/UX', 'Computer Science', 'ritikapsingh44@gmail.com', '+91 93270 36417', 'Gujrat', 'ritika.jpg')">
+            <img src="assets/ritika.jpg" alt="Singh Prasant Ritika">
+        </div>
+        <div class="student-card" data-roll="22stucddn01032" data-name="vaibhav" onclick="showDetails('22STUCDDN01032', 'Vaibhav Gupta', 'Non Technical', 'Computer Science', 'vaibhavguptap44@gmail.com', '+91 62308 92961', 'Dharamsala,Himachal pradesh', 'vaibhav.jpg')">
+            <img src="assets/vaibhav.jpg" alt="Vaibhav Gupta">
+        </div>
+
+    </div>
+    <h4> --THE ICFAI UNIVERSITY DEHRADUN--</h4>
+    <h6>AYUSH SAINI</h6>
+
+
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Student Image">
+            <h2 id="modalName"></h2>
+            <p><strong>Roll Number:</strong> <span id="modalRoll"></span></p>
+            <p><strong>Job Role:</strong> <span id="modalJob"></span></p>
+            <p><strong>Course:</strong> <span id="modalCourse"></span></p>
+            <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+            <p><strong>Mobile No:</strong> <span id="modalPhone"></span></p>
+            <p><strong>Address:</strong> <span id="modalAddress"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
